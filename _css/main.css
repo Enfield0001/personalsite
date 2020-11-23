@@ -1,0 +1,48 @@
+/********************************
+CATCH-ALLS, ROOT APPLIED, INITIAL
+********************************/
+:root {
+	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	box-sizing: border-box;	
+	
+	/*VARIABLES*/
+	--brandingprimary: #00b74f;
+		--brandingprimary_shadedown: #008539;
+	--brandingsecondary: #ff48b0;
+}
+body {
+	margin: 0;
+	font-size: 12pt;
+}
+
+
+
+
+/*********************
+GENERAL TAG FORMATTING
+*********************/
+
+/*HEADERS*/
+
+/*INS and DEL*/
+
+
+/*HORIZONTAL RULE*/
+
+
+/*TAG SPECIFIC CLASSES*/
+
+
+
+
+/*******************
+GENERAL PAGE MATTERS
+*******************/
+
+/*HEADER MATERIAL*/
+/*BODY AND RELATED CLASSES*/
+
+/* * * * * * * * * *
+SPECIFIC PAGE MATTERS
+* * * * * * * * * */
+/*LANDING*/
