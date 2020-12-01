@@ -10,9 +10,21 @@ CATCH-ALLS, ROOT APPLIED, INITIAL
 		--brandingprimary_shadedown: #008539;
 	--brandingsecondary: #ff48b0;
 }
+html {height: 100%;}
 body {
-	margin: 0;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    
 	font-size: 12pt;
+}
+div#interior {
+    min-height: 100%;
+}
+div#barkit {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 80px auto;
 }
 
 
@@ -23,6 +35,29 @@ GENERAL TAG FORMATTING
 *********************/
 
 /*HEADERS*/
+header {
+    width: 100%;
+    background-color: lightblue;
+}
+header > img {
+    position: relative;
+    top: 15px;
+    right: 15px;
+    height: 50px;
+}
+div.menutoggler {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+}
+div.menutoggler > img {
+    position: relative;
+    top: 25%;
+    left: 25%;
+
+    width: 40px;
+}
 
 /*INS and DEL*/
 

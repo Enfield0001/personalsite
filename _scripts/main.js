@@ -1,6 +1,6 @@
 //DROPDOWN MENU
 //Find the element in the HTML with an ID of "hamburger." An "Event Listener" is added that, when "hamburger" is clicked, the following happens.
-document.getElementById("hamburger").addEventListener("click", function(){
+document.getElementById("menutoggler").addEventListener("click", function(){
     //querySelectorAll returns an array of HTML elements. A loop is needed to apply the changes to every element.
 	var mod = document.querySelectorAll(".menumodifier");
     var i;
@@ -9,7 +9,7 @@ document.getElementById("hamburger").addEventListener("click", function(){
 	}
 });
 
-document.getElementById("mobilelegal").addEventListener("click", function(){
+document.getElementById("legaltoggler").addEventListener("click", function(){
     //querySelectorAll returns an array of HTML elements. A loop is needed to apply the changes to every element.
 	var mod = document.querySelectorAll(".menumodifier");
     var i;
