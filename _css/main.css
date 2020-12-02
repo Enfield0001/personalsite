@@ -8,9 +8,10 @@ CATCH-ALLS, ROOT APPLIED, INITIAL
 	/*VARIABLES*/
 	--brandingprimary: #00b74f;
 		--brandingprimary_tintup: #38D77C;
-		--brandingprimary_shadedown1: #008539;
+		--brandingprimary_shadedown1: #009A42;
 		--brandingprimary_shadedown2: #008137;
 	--brandingsecondary: #ff48b0;
+	--quick_easeout: cubic-bezier(.12,.75,.50,1);
 }
 body {
 	margin: 0;
@@ -46,13 +47,29 @@ header {
 	justify-content: space-between;
 	align-items: center;
 
-	background-color: lightblue;
+	background-color: var(--brandingprimary);
 }
-header > img {
-	position: relative;
+header > img:nth-of-type(1) {
+	position: absolute;
 
-	margin-right: 15px;
+	right: 15px;
 	height: 50px;
+	transition: right 0.2s var(--quick_easeout) 0.4s;
+}
+header > img:nth-of-type(1).menutoggle {
+	right:-41px;
+	transition: right 0.2s var(--quick_easeout);
+}
+header > img:nth-of-type(2) {
+	position: absolute;
+
+	right: -214px;
+	height: 50px;
+	transition: right 0.2s var(--quick_easeout);
+}
+header > img:nth-of-type(2).menutoggle {
+	right:15px;
+	transition: right 0.2s var(--quick_easeout) 0.4s;
 }
 div#menutoggler {
 	display: flex;
@@ -60,11 +77,15 @@ div#menutoggler {
 	align-items: center;
 	width: 80px;
 	height: 80px;
-	background-color: blue;
+	background-color: var(--brandingprimary);
+	transition: background-color 0.2s var(--quick_easeout);
 }
+div#menutoggler:hover {background-color: var(--brandingprimary_tintup);}
+div#menutoggler:active {background-color: var(--brandingprimary_shadedown2)}
 div#menutoggler > img {
 	width: 40px;
 	position: relative;
+	transition: transform 0.2s var(--quick_easeout);
 }
 div#menutoggler > img.menutoggle {
 	transform: rotate(180deg);
@@ -72,9 +93,10 @@ div#menutoggler > img.menutoggle {
 nav {
 	position: relative;
 	z-index: -1;
-	top: 100%;
+	bottom: 120%;
+	transition: bottom 0.5s var(--quick_easeout);
 }
-nav.menutoggle {top: 0;}
+nav.menutoggle {bottom: 0;}
 nav ul {
 	list-style: none;
 	display: grid;
@@ -107,10 +129,27 @@ nav li a {
 	display: block;
 	height: 100%;
 	background-color: var(--brandingprimary);
+	transition: background-color 0.2s var(--quick_easeout);
 
 	color: white;
 	text-decoration: none;
 }
+#pghome nav li.home a,
+#pgworks nav li.works a,
+#pgpassion nav li.passion a,
+#pgacademics nav li.academics a,
+#pgbusiness nav li.business a,
+#pgabout nav li.about a,
+#pgcontact nav li.contact a {
+	background-color: var(--brandingprimary_shadedown1);
+}
+#pghome nav li.home a:hover,
+#pgworks nav li.works a:hover,
+#pgpassion nav li.passion a:hover,
+#pgacademics nav li.academics a:hover,
+#pgbusiness nav li.business a:hover,
+#pgabout nav li.about a:hover,
+#pgcontact nav li.contact a:hover,
 nav li a:hover {
 	background-color: var(--brandingprimary_tintup);
 }
