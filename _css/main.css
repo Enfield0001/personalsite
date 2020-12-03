@@ -35,7 +35,8 @@ div#interior {
 div#barkit {
 	position: fixed;
 	width: 100%;
-	height: 100%;
+	z-index: 10;
+
 	display: grid;
 	grid-template-rows: 80px auto;
 	grid-template-columns: 100%;
@@ -102,10 +103,15 @@ div#menutoggler > img.menutoggle {
 nav {
 	position: relative;
 	z-index: -1;
+	transition: bottom 0.5s var(--quick_easeout) 1s;
 	bottom: 120%;
-	transition: bottom 0.5s var(--quick_easeout);
+	display: none;
 }
-nav.menutoggle {bottom: 0;}
+nav.menutoggle {
+	transition: bottom 0.5s var(--quick_easeout) 1s;
+	bottom: 0;
+	display: block;
+}
 nav ul {
 	list-style: none;
 	display: grid;
@@ -205,19 +211,25 @@ div.legalwrap {
 	position: fixed;
 	bottom: 0;
 
+	transition: background-color 0.4s var(--quick_easeout);
+	background-color: rgba(0, 0, 0, 0);
+
 	width: 100%;
 	height: 0;
-
-	background-color: rgba(0, 0, 0, 0);
-	transition: background-color 0.4s var(--quick_easeout);
 }
 div.legalwrap.legaltoggle {
 	height: 100%;
-	transition: height 0 linear 0.4s;
 	background-color: rgba(0, 0, 0, 0.5);
+	transition: background-color 0.4s var(--quick_easeout);
+}
+div.spacer {
+	position: relative;
+	height: 100%;
 }
 div.mobilelegal {
 	position: relative;
+	bottom: 0;
+	transition: transform 0.4s var(--quick_easeout);
 	transform: translate(0, -61px);
 
 	display: flex;
@@ -227,7 +239,8 @@ div.mobilelegal {
 	width: 100%;
 }
 div.mobilelegal.legaltoggle {
-	transform: translate(0,-10%);
+	transition: transform 0.4s var(--quick_easeout);
+	transform: translate(0,-100%);
 }
 div.mobilelegal div:first-child {
 	margin: auto;
@@ -249,7 +262,16 @@ div.mobilelegal div:nth-child(2) {
 div.mobilelegal img {
 	position: relative;
 	transform:rotate(180deg);
+	transition: transform 0.4s var(--quick_easeout);
 	width: 12px;
+}
+div.mobilelegal img.legaltoggle {
+	transform:rotate(0deg);
+	transition: transform 0.4s var(--quick_easeout);
+}
+div.mobilelegal p {
+	color: var(--bodygray);
+	font-size: 12pt;
 }
 div.mobilelegal div p:first-child {margin-top: 0;}
 div.mobilelegal div p:last-child {margin-bottom: 0;}
