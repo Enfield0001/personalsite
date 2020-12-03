@@ -11,10 +11,10 @@ document.getElementById("menutoggler").addEventListener("click", function(){
 
 document.getElementById("legaltoggler").addEventListener("click", function(){
     //querySelectorAll returns an array of HTML elements. A loop is needed to apply the changes to every element.
-	var mod = document.querySelectorAll(".menumodifier");
+	var mod = document.querySelectorAll(".legalmodifier");
     var i;
 	for (i = 0; i < mod.length; i++) {
-		mod[i].classList.toggle("menutoggle") ;
+		mod[i].classList.toggle("legaltoggle") ;
 	}
 });
 

@@ -11,6 +11,7 @@ CATCH-ALLS, ROOT APPLIED, INITIAL
 		--brandingprimary_shadedown1: #009A42;
 		--brandingprimary_shadedown2: #008137;
 	--brandingsecondary: #ff48b0;
+	--bodygray: #3f3f3f;
 	--quick_easeout: cubic-bezier(.12,.75,.50,1);
 }
 html {
@@ -200,3 +201,55 @@ main {
 SPECIFIC PAGE MATTERS
 * * * * * * * * * */
 /*LANDING*/
+div.legalwrap {
+	position: fixed;
+	bottom: 0;
+
+	width: 100%;
+	height: 0;
+
+	background-color: rgba(0, 0, 0, 0);
+	transition: background-color 0.4s var(--quick_easeout);
+}
+div.legalwrap.legaltoggle {
+	height: 100%;
+	transition: height 0 linear 0.4s;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+div.mobilelegal {
+	position: relative;
+	transform: translate(0, -61px);
+
+	display: flex;
+	flex-direction: column;
+	
+
+	width: 100%;
+}
+div.mobilelegal.legaltoggle {
+	transform: translate(0,-10%);
+}
+div.mobilelegal div:first-child {
+	margin: auto;
+	display: inline;
+
+	padding: 1rem;
+
+	background-color: var(--brandingprimary);
+	border-radius: 15px 15px 0 0;
+	color: white;
+}
+div.mobilelegal div:nth-child(2) {
+	padding: 1rem;
+	background-color: white;
+
+	color: var(--bodygray);
+	text-align: left;
+}
+div.mobilelegal img {
+	position: relative;
+	transform:rotate(180deg);
+	width: 12px;
+}
+div.mobilelegal div p:first-child {margin-top: 0;}
+div.mobilelegal div p:last-child {margin-bottom: 0;}
