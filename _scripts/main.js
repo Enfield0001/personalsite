@@ -21,7 +21,7 @@ document.getElementById("legaltoggler").addEventListener("click", function(){
 //DROPDOWN AUTO-CLOSE
 /*If the menu is still open while the browser window is resized, the menu items will still have the menutoggle class. This will automatically
 remove the menutoggle class if the window hits the breakpoint.*/
-window.addEventListener("resize", function(){
+/* window.addEventListener("resize", function(){
     if (window.innerWidth > 800) {
         var mod = document.querySelectorAll(".menutoggle");
         var i;
@@ -29,4 +29,4 @@ window.addEventListener("resize", function(){
             mod[i].classList.remove("menutoggle") ;
         }
     }
-})
+}) */
