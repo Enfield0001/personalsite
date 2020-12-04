@@ -14,6 +14,7 @@ CATCH-ALLS, ROOT APPLIED, INITIAL
 	--bodygray: #3f3f3f;
 	--quick_easeout: cubic-bezier(.12,.75,.50,1);
 }
+* {box-sizing: border-box;}
 html {
 	height: 100%;
 }
@@ -41,6 +42,7 @@ div#barkit {
 	grid-template-rows: 80px auto;
 	grid-template-columns: 100%;
 }
+div#barkit.menutoggle {height:100%;}
 
 
 
@@ -292,12 +294,14 @@ div#interior {
 	grid-template-rows: auto;
 }
 div#barkit {
-	grid-column: 1 / 2;
-	grid-template-rows: 160px auto;
 	width: auto;
+	grid-template-rows: 170px auto;
 	height: 100%;
 
 	background-color: var(--brandingprimary);
+}
+div#barkit.menutoggle {
+	width: 254px;
 }
 header {
 	display: block;
@@ -310,26 +314,43 @@ header > img:nth-of-type(1) {
 	left: 20px;
 	top: 20px;
 	height: 50px;
-	transition: right 0.2s var(--quick_easeout) 0.4s;
+	transition: left 0.2s var(--quick_easeout) 0.4s;
 }
 header > img:nth-of-type(1).menutoggle {
 	left:-41px;
-	transition: right 0.2s var(--quick_easeout);
+	transition: left 0.2s var(--quick_easeout);
 }
 header > img:nth-of-type(2) {
 	position: absolute;
 
-	right: -214px;
+	left: -214px;
+	top: 20px;
 	height: 50px;
-	transition: right 0.2s var(--quick_easeout);
+	transition: left 0.2s var(--quick_easeout);
 }
 header > img:nth-of-type(2).menutoggle {
-	right:15px;
-	transition: right 0.2s var(--quick_easeout) 0.4s;
+	left:20px;
+	transition: left 0.2s var(--quick_easeout) 0.4s;
 }
 div#menutoggler {
 	position: relative;
-	bottom: 0;
+	transform: translateY(90px);
+}
+div#menutoggler > img {
+	width: 40px;
+	position: relative;
+	transition: transform 0.2s var(--quick_easeout);
+	transform: rotate(270deg);
+}
+div#menutoggler > img.menutoggle {
+	transform: rotate(90deg);
+}
+nav ul {
+	height: auto;
+	grid-template-rows: auto;
+}
+nav li.works {
+	grid-template-rows: auto;
 }
 main {
 	grid-row: auto;
