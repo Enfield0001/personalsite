@@ -103,14 +103,12 @@ div#menutoggler > img.menutoggle {
 nav {
 	position: relative;
 	z-index: -1;
-	transition: bottom 0.5s var(--quick_easeout) 1s;
+	transition: bottom 0.5s var(--quick_easeout);
 	bottom: 120%;
-	display: none;
 }
 nav.menutoggle {
-	transition: bottom 0.5s var(--quick_easeout) 1s;
-	bottom: 0;
-	display: block;
+	transition: bottom 0.5s var(--quick_easeout);
+	bottom: 0%;
 }
 nav ul {
 	list-style: none;
