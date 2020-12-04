@@ -220,7 +220,10 @@ main .maininterior {
 /*GENERAL TEXT*/
 
 /*HEADERS*/
-h2, h3, h4 {color: var(--brandingprimary);}
+h2, h3, h4 {
+	color: var(--brandingprimary);
+	clear: both;
+}
 
 
 /* * * * * * * * * *
@@ -304,9 +307,67 @@ div.mobilelegal div p:last-child {margin-bottom: 0;}
 	text-align: center;
 }
 #pghome main h2 {color: white;}
+
+
 /*ABOUT*/
-.portraitpng {
+.doodle {
 	width: 100%;
+}
+
+
+/*CONTACT*/
+fieldset {
+	margin-top: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 400px;
+	padding: 0;
+	border: none;
+}
+legend:before {
+	content: "✱ ";
+	color: red;
+}
+form li {
+	margin-top: 1rem;
+	padding-left: 1.3rem;
+	list-style: none;
+}
+
+.required:before {
+	content: "✱ ";
+	color: red;
+}
+.required {
+	margin-left: -1.15rem;
+}
+
+label {
+	display: block;
+}
+input[type="text"], input[type="email"] {
+	width: 100%;
+	padding: 0.2rem;
+}
+textarea {
+	width: 12rem;
+	height: 3rem;
+	padding: 0.2rem;
+	resize: none;
+}
+input[type="submit"] {
+	border: none;
+	padding: 0.3rem;
+	
+	color: white;
+	background-color: #00b74f;
+}
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+input[type="submit"]:active {
+	background-color: #007533;
 }
 
 
@@ -397,14 +458,19 @@ main {
 	border-top: none;
 }
 main .maininterior {padding-top: 5rem;}
-.portraitpng {
+.doodle {
 	max-width: 300px;
 	shape-margin: 2rem;
 	margin: 2rem;
 	margin-left: 0;
+	margin-top: 0;
 
 	float: left;
 	shape-outside: url("../about/_images/portrait.png");
+}
+.doodle.contactpng {
+	shape-margin: 1rem;
+	shape-outside: url("../contact/_images/contact.png");
 }
 }
 
@@ -449,7 +515,7 @@ div.flank.left {
 	grid-column: 1 / 2;
 	flex-direction: row-reverse;
 
-	background-image: url(../_images/flankleft5.jpg);
+	background-image: url(../_images/flankleft.jpg);
 	background-position: center;
 }
 div.flank.right {

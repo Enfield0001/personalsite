@@ -7,17 +7,17 @@
 	<meta name="description" content="The official site and portfolio of Paul Edmiston, graphic and web designer. Please, make yourself comfortable."/>
 	<meta name="Author" content="Paul Edmiston"/>
 
-	<link rel="preload" href="_css/main.css" as="style">
-	<link rel="preload" href="_scripts/main.js" as="script">
+	<link rel="preload" href="../_css/main.css" as="style">
+	<link rel="preload" href="../_scripts/main.js" as="script">
 
-	<link rel="preload" href="_images/expand.svg" as="image">
-	<link rel="preload" href="_images/logo_white.svg" as="image">
-	<link rel="preload" href="_images/logotype_nooutline.svg" as="image">
-	<link rel="preload" href="_images/splash1200px.jpg" as="image">
+	<link rel="preload" href="../_images/expand.svg" as="image">
+	<link rel="preload" href="../_images/logo_white.svg" as="image">
+	<link rel="preload" href="../_images/logotype_nooutline.svg" as="image">
+	<link rel="preload" href="../_images/splash1200px.jpg" as="image">
 
-	<link rel="stylesheet" type="text/css" href="_css/main.css">
+	<link rel="stylesheet" type="text/css" href="../_css/main.css">
 </head>
-<body id="pghome">
+<body id="pgcontact">
 <div class="flank left">
 	<div class="halftone left"></div>
 </div>
@@ -25,31 +25,31 @@
 <div id="barkit" class="menumodifier">
 	<header>
 		<div id="menutoggler">
-			<img class="menumodifier" src="_images/expand.svg" alt="">
+			<img class="menumodifier" src="../_images/expand.svg" alt="">
 		</div>
-		<img class="menumodifier" src="_images/logo_white.svg" alt="">
-		<img class="menumodifier" src="_images/logotype_nooutline.svg" alt="">
+		<img class="menumodifier" src="../_images/logo_white.svg" alt="">
+		<img class="menumodifier" src="../_images/logotype_nooutline.svg" alt="">
 	</header>
 	<nav class="menumodifier">
 		<ul>
-			<li class="home"><a href="index.html">Home</a></li>
+			<li class="home"><a href="../index.html">Home</a></li>
 			<li class="works" style="grid-row: 2 / 6;">
-				<a href="works/">Works</a><ul style="grid-row: 2 / 5;">
+				<a href="../works/">Works</a><ul style="grid-row: 2 / 5;">
 					<li class="passion">
-						<a href="works/passion/"><span>Done in</span> <br>
+						<a href="../works/passion/"><span>Done in</span> <br>
 							Passion</a>
 					</li>
 					<li class="academics">
-						<a href="works/passion/"><span>Done in</span> <br>
+						<a href="../works/passion/"><span>Done in</span> <br>
 							Academics</a>
 					</li>
 					<li class="business">
-						<a href="works/business/"><span>Done in</span> <br>
+						<a href="../works/business/"><span>Done in</span> <br>
 							Business</a>
 					</li>
 				</ul></li>
-			<li class="about"><a href="about/">About</a></li>
-			<li class="contact"><a href="contact/">Contact</a></li>
+			<li class="about"><a href="../about/">About</a></li>
+			<li class="contact"><a href="../contact/">Contact</a></li>
 		</ul>
 		<div>
 			<p>&copy; 2020 Paul Edmiston.<br>
@@ -60,8 +60,43 @@
 </div>
 
 <main>
-	<h2>Welcome.</h2>
-	<p>Please, make yourself comfortable.</p>
+	<div class="maininterior">
+		<h2>Let's touch base!</h2>
+		<article>
+			<img class="doodle contactpng" src="_images/contact.png" alt="If you want a possible conversation starter, like reading occasionally.">
+			<p>Wanna talk business? Just wanna pop in and say hi? This is the place to start.</p>
+			<p>Unless you actually have the means or you're specifically told you to do otherwise, please start the conversation either through the provided contact form or one of the listed emails. Additional contact information, formal resumes, and other material may be provided after request and discussion.</p>
+		</article>
+		<div>
+			<h3>Contact form</h3>
+			<p>If you prefer to be brief and can keep things purely to text, consider using the contact form below.</p>
+			<form action="_scripts/form.php" method="post">
+				<fieldset>
+					<legend>= Required</legend>
+					<li>
+						<label for="name" class="required">Full Name</label>
+						<input type="text" name="name" placeholder="eg. John Doe" required />
+					</li>
+					<li>
+						<label for="email" class="required">Email</label>
+						<input type="email" name="email" placeholder="eg. john@doemail.com" required />
+					</li>
+					<li>
+						<label for="formsubject">Subject</label>
+						<input type="text" name="formsubject"/>
+					</li>
+					<li>
+						<label for="message" class="required">Message</label>
+						<textarea name="message" placeholder="Tell me whatcha thinkin about"></textarea>
+					</li>
+			
+					<li>
+						<input type="submit" name="submitted" />
+					</li>
+				</fieldset>
+			</form>
+		</div>
+	</div>
 </main>
 </div>
 <div class="flank right">
@@ -71,7 +106,7 @@
 	<div class="spacer"></div>
 	<div class="mobilelegal legalmodifier">
 		<div id="legaltoggler">
-			<img class="legalmodifier" src="_images/expand.svg" alt=""> Legal information
+			<img class="legalmodifier" src="../_images/expand.svg" alt=""> Legal information
 		</div>
 		<div>
 			<p>&copy; 2020 Paul Edmiston.<br>
@@ -80,6 +115,6 @@
 		</div>
 	</div>
 </div>
-<script src="_scripts/main.js"></script>
+<script src="../_scripts/main.js"></script>
 </body>
 </html>
