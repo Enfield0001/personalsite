@@ -54,7 +54,7 @@ div#barkit.menutoggle {height:100%;}
 GENERAL TAG FORMATTING
 *********************/
 
-/*HEADERS*/
+/*SIDEBAR*/
 header {
 	width: 100%;
 
@@ -182,7 +182,6 @@ nav div {
 div.flank {
 	display: none;
 }
-
 /*INS and DEL*/
 
 
@@ -202,18 +201,27 @@ GENERAL PAGE MATTERS
 main {
 	grid-row: 2 / 3;
 	border-top: 4px solid var(--brandingprimary_shadedown2);
-}
-#pghome main {
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
-	background-image: url("../_images/splash1200px.jpg");
-	background-size: cover;
-	background-position: left;
-	color: white;
-	text-align: center;
+	color: var(--bodygray);
 }
+main .maininterior > *:first-child {margin-top: 0;}
+main .maininterior > *:last-child {margin-bottom: 0;}
+main .maininterior {
+	margin: auto;
+	width: 100%;
+	max-width: 800px;
+	padding: 5rem 3rem;
+	padding-top: 3rem;
+}
+/*GENERAL TEXT*/
+
+/*HEADERS*/
+h2, h3, h4 {color: var(--brandingprimary);}
+
 
 /* * * * * * * * * *
 SPECIFIC PAGE MATTERS
@@ -287,6 +295,19 @@ div.mobilelegal p {
 }
 div.mobilelegal div p:first-child {margin-top: 0;}
 div.mobilelegal div p:last-child {margin-bottom: 0;}
+
+#pghome main {
+	background-image: url("../_images/splash1200px.jpg");
+	background-size: cover;
+	background-position: left;
+	color: white;
+	text-align: center;
+}
+#pghome main h2 {color: white;}
+/*ABOUT*/
+.portraitpng {
+	width: 100%;
+}
 
 
 
@@ -374,6 +395,16 @@ main {
 	grid-row: auto;
 	grid-column: 2 / 3;
 	border-top: none;
+}
+main .maininterior {padding-top: 5rem;}
+.portraitpng {
+	max-width: 300px;
+	shape-margin: 2rem;
+	margin: 2rem;
+	margin-left: 0;
+
+	float: left;
+	shape-outside: url("../about/_images/portrait.png");
 }
 }
 
