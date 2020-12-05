@@ -159,7 +159,7 @@ nav li a span {
 	font-size: 12pt;
 }
 #pghome nav li.home a,
-#pgworks nav li.works a,
+#pgworks nav li.works > a,
 #pgpassion nav li.passion a,
 #pgacademics nav li.academics a,
 #pgbusiness nav li.business a,
@@ -510,6 +510,9 @@ main .maininterior {padding-top: 5rem;}
 .doodle.contactpng {
 	shape-margin: 1rem;
 	shape-outside: url("../contact/_images/contact.png");
+}
+.doodle.wippng {
+	shape-outside: url("../works/_images/wip.png");
 }
 textarea {resize: vertical;}
 }
