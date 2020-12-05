@@ -92,7 +92,7 @@
 
 			mail($destination, $subject, $body, $headers);
 			// test to see if form data is received.
-			echo "<link rel='stylesheet' type='text/css' href='../_css/form.css' />";
+			echo "<link rel='stylesheet' type='text/css' href='../../_css/form.css' />";
 			echo "<h1>Thanks for contacting me!</h1>";
 			echo "<p>Your message has been sent. Below is the info you provided:</p>";
 			echo "<ul>";
@@ -107,7 +107,7 @@
 		else
 		{
 			// test to see if form data is received.
-			echo "<link rel='stylesheet' type='text/css' href='../_css/form.css' />";
+			echo "<link rel='stylesheet' type='text/css' href='../../_css/form.css' />";
 			echo "<h1>There was an error with your form submission</h1>";
 			echo "<p>Please check the info that you provided below and use the provided link to try again.</p>";
 			echo "<ul>";
