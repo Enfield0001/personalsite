@@ -475,6 +475,22 @@ a#rclm_button {
 	background-image: url("../works/passion/_images/rclmbutton.png");
 	background-position: center;
 }
+a#live811_button {
+	background-image: url("../works/academics/_images/811livebutton.png");
+	background-position: center;
+}
+a#personalsite_button {
+	background-image: url("../works/academics/_images/personalsitebutton.png");
+	background-position: center;
+}
+a#hourglass_button {
+	background-image: url("../works/business/_images/hourglassbutton.png");
+	background-position: center;
+}
+a#turningpoints_button {
+	background-image: url("../works/business/_images/turningpointsbutton.png");
+	background-position: center;
+}
 
 
 
@@ -584,6 +600,8 @@ main .maininterior {padding-top: 5rem;}
 }
 .doodle.wippng {shape-outside: url("../works/_images/wip.png");}
 .doodle.passionpng {shape-outside: url("../works/passion/_images/passion.png");}
+.doodle.academicspng {shape-outside: url("../works/academics/_images/academics.png");}
+.doodle.businesspng {shape-outside: url("../works/business/_images/business.png");}
 textarea {resize: vertical;}
 div.worksgrid > a {width: 45%;}
 div.worksgrid.portfolio {grid-template-columns: repeat(2, 1fr);}
