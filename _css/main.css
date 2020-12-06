@@ -232,6 +232,7 @@ main div.hero {
 	background-size: cover;
 	color: white;
 }
+main div.hero.personalsite {background-image: url(../works/academics/_images/personalsitehero.jpg)}
 main div.hero.hourglass {background-image: url(../works/business/_images/hourglasshero.jpg)}
 main div.hero.turningpoints {
 	background-image: url(../works/business/_images/turningpointshero.jpg);
@@ -338,15 +339,21 @@ figure {
 	display: flex;
 	justify-content: center;
 }
+figure div {
+	display: table;
+}
+
 figure img {
+	display: table-cell;
 	max-width: 100%;
 	max-height: 66vh;
 	
 	border: 4px solid var(--brandingprimary);
 }
+
 figcaption {
-	display: inline-block;
-	margin-top: 1rem;
+	display: table-caption;
+	caption-side: bottom;
 	
 	color: var(--captiongray);
 	font-style: italic;
@@ -601,12 +608,9 @@ ul.statisticshead {
 	list-style: none;
 	padding: 0;
 }
-div.statisticsbody {
-	font-size: 14pt;
-}
-div.statisticsbody ul {
-	margin-top: 0;
-}
+div.statisticsbody {font-size: 14pt;}
+div.statisticsbody ul {margin-top: 0;}
+div.statisticsbody div.honorablemention {margin-top: 1rem;}
 
 
 
