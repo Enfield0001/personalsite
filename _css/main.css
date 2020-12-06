@@ -288,6 +288,9 @@ h5 {
 	margin: 0;
 }
 
+/*SECTIONS*/
+article p.sectionend {margin-bottom: 6rem;}
+
 /*HR*/
 div.separator {
 	position: relative;
