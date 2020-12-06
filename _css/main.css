@@ -271,7 +271,7 @@ main .maininterior {
 main p {
 	line-height: 1.5;
 }
-main p.sectionend {
+main .sectionend {
 	margin-bottom: 3rem;
 }
 main a {
