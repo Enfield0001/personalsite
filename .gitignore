@@ -2,3 +2,5 @@
 .vs/
 *.code-workspace
 *.psd
+/site/accounts
+/site/config/config.php
