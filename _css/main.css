@@ -232,6 +232,7 @@ main div.hero {
 	background-size: cover;
 	color: white;
 }
+main div.hero.enfieldbrand {background-image: url(../works/passion/_images/enfieldhero.jpg)}
 main div.hero.personalsite {background-image: url(../works/academics/_images/personalsitehero.jpg)}
 main div.hero.live811 {background-image: url(../works/academics/_images/811livehero.jpg)}
 main div.hero.hourglass {background-image: url(../works/business/_images/hourglasshero.jpg)}
@@ -269,21 +270,19 @@ main .maininterior {
 	padding-top: 3rem;
 }
 /*GENERAL TEXT*/
-main p {
-	line-height: 1.5;
-}
-main .sectionend {
-	margin-bottom: 3rem;
-}
+main p,
+main ul,
+main ol {line-height: 1.5;}
+main .sectionend {margin-bottom: 3rem;}
 main a {
 	color: var(--linkderive);
 	text-decoration: none;
 }
-main a:active {
-	text-decoration: underline;
-}
-main a:visited {
-	color: var(--linkvisit);
+main a:active {text-decoration: underline;}
+main a:visited {color: var(--linkvisit);}
+blockquote {
+	color: var(--captiongray);
+	font-style: italic;
 }
 
 /*HEADERS*/
