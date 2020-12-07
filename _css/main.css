@@ -330,6 +330,7 @@ div.sepline .halftone {
 	height: 100%;
 
 	mask-image: url(../_images/halftone.png);
+	-webkit-mask-image: url(../_images/halftone.png);
 }
 div.halftone.left {
 	transform: rotate(180deg);
@@ -803,6 +804,7 @@ div.halftone {
 
 	background-color: var(--brandingprimary_shadedown2);
 	mask-image: url(../_images/halftone.png);
+	-webkit-mask-image: url(../_images/halftone.png);
 }
 div.halftone.left {
 	transform: rotate(180deg);
